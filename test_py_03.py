@@ -11,4 +11,3 @@ class TestPriceLess20(TestCase):
         }
         self.assertEqual(price_less_20(items), { 'milk15': False, 'cheese': True, 'sausage': False})
 
-
