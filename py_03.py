@@ -5,8 +5,8 @@ items = {
     'sausage':{'name': 'колбаса 1 кг.', 'count': 122, 'price': 1990.9}
 }
 
-def priceLess20(dict):
-    d = {name: params['count'] < 20 for name, params in dict.items()}
-    return d
+def price_less_20(dict):
+    return {name: params['count'] < 20 for name, params in dict.items()}
 
-print(priceLess20(items))
+if __name__ == '__main__':
+    print(price_less_20(items))
