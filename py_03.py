@@ -9,4 +9,4 @@ def price_less_20(dict):
     return {name: params['count'] < 20 for name, params in dict.items()}
 
 if __name__ == '__main__':
-    print(price_less_20(items))
+    print('price_less_20 =', price_less_20(items))
